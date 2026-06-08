@@ -1,41 +1,44 @@
-# Project on AP Politics
+# AlgoNext Hard Test 1
 
-This repository contains a small Python script `python_mini_project.py` created as a mini project about AP politics.
+This repository contains Python solutions for various algorithm and data structure exercises.
+
+## Contents
+
+### 1. Character Frequency Counter (`algonex`)
+A function that counts the frequency of each character in a string and returns a dictionary with character counts.
+```python
+algonex("ALGONEX")  # Returns character frequency dictionary
+```
+
+### 2. Duplicate Finder (`duplicatefinder`)
+Finds and returns a list of duplicate elements from an input list.
+```python
+duplicatefinder([101,101,102,102,103,103,104])  # Returns [101, 102, 103]
+```
+
+### 3. Employee Salary Analysis
+Finds the highest and lowest paid employees using `max()` and `min()` functions on tuples.
+
+### 4. Even Number Squares
+Generates a list of squares for all even numbers from 1 to 1000 using list comprehension.
+
+### 5. Student Grade Sorting
+Sorts students by their grades in descending order using lambda functions and sorted().
+
+### 6. Bank Report (In Progress)
+A function to calculate total credits, debits, and final balance from a transaction list.
+
+### 7. Map and Filter (In Progress)
+Demonstrates usage of `map()` and `filter()` functions for data transformation.
 
 ## Files
+- `algonex_text1.py` - Main Python file with all exercise solutions
 
-- `python_mini_project.py` — main script
-
-## Usage
-
-Run the script with Python 3.x:
-
-```
-python python_mini_project.py
+## Getting Started
+To run the file:
+```bash
+python algonex_text1.py
 ```
 
 ## Notes
-
-- Pushed to https://github.com/kolkarnisha/project_on_AP_politics.git
-
-- print("nishazareentaj")
-for i in range(5):
-    age = int(input("enter your age: "))
-    name = str(input("enter your name: "))
-    if age >= 18:
-        print(f"{name} eligible to vote")
-        parties = ["YSR CONGRESS PARTY", "INDIAN NATIONAL CONGRESS PARTY", "TELUGHUDHESHAM PARTY", "JANASENA PARTY", "BJP", "Other", "NOTA"]
-        print("\nSelect your favourite party:")
-        for idx, party in enumerate(parties, 1):
-            print(f"{idx}. {party}")
-        
-        choice = int(input("Enter choice number: "))
-        if 1 <= choice <= len(parties):
-            selected_party = parties[choice - 1]
-            print(f"{name} selected: {selected_party}")
-        else:
-            print("Invalid choice, no party selected")
-        print()  # Empty line for spacing
-            
-    else:
-        print(f"{name} not eligible to vote\n")
+Some functions are commented out and in progress. Uncomment relevant sections to execute specific exercises.
